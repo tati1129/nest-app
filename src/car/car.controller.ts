@@ -6,7 +6,7 @@ import { type CreateCarDto, CreateCarSchema } from './car.create.dto';
 export class CarController {
 
     @Post()
-    createCar(@Body(new ZodValidationPipe(CreateCarSchema)) body:CreateCarDto, ){
-        return body;
+    createCar(@Body(new ZodValidationPipe(CreateCarSchema)) dto:CreateCarDto ){
+        return dto;
     }
 }
