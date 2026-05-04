@@ -93,6 +93,8 @@ export class ArtifactsController {
     return { id };
   }
 
+
+  //___________Создание нового артефакта____________
   @Post()
   createArtifact(@Body(new ZodValidationPipe(CreateArtifactSchema)) body:CreateArtifactDto,) {
     return body;
